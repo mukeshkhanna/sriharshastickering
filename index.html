@@ -1,0 +1,628 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sri Harsha Stickering - Premium Vehicle Graphics & Decals</title>
+    <style>
+        /* Global Styles */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Arial', sans-serif;
+        }
+        
+        body {
+            background-color: #f5f5f5;
+            color: #333;
+            line-height: 1.6;
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+        
+        /* Header Styles */
+        header {
+            background-color: #1a3e72;
+            color: white;
+            padding: 20px 0;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+        
+        .header-container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        
+        .logo {
+            display: flex;
+            align-items: center;
+        }
+        
+        .logo img {
+            height: 60px;
+            margin-right: 15px;
+        }
+        
+        .logo-text h1 {
+            font-size: 24px;
+            margin-bottom: 5px;
+        }
+        
+        .logo-text p {
+            font-size: 14px;
+            opacity: 0.8;
+        }
+        
+        nav ul {
+            display: flex;
+            list-style: none;
+        }
+        
+        nav ul li {
+            margin-left: 20px;
+        }
+        
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-weight: 600;
+            transition: color 0.3s;
+        }
+        
+        nav ul li a:hover {
+            color: #ffcc00;
+        }
+        
+        /* Hero Section */
+        .hero {
+            background-image: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('/sri-harsha-stickering/sri-harsha-stickering/img/background_1.jpg');
+            background-size: cover;
+            background-position: center;
+            height: 500px;
+            display: flex;
+            align-items: center;
+            text-align: center;
+            color: white;
+        }
+        
+        .hero-content h2 {
+            font-size: 42px;
+            margin-bottom: 20px;
+        }
+        
+        .hero-content p {
+            font-size: 20px;
+            margin-bottom: 30px;
+            max-width: 800px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        
+        .btn {
+            display: inline-block;
+            background-color: #ffcc00;
+            color: #1a3e72;
+            padding: 12px 30px;
+            border-radius: 4px;
+            text-decoration: none;
+            font-weight: bold;
+            transition: all 0.3s;
+        }
+        
+        .btn:hover {
+            background-color: #e6b800;
+            transform: translateY(-2px);
+        }
+        
+        /* Services Section */
+        .services {
+            padding: 80px 0;
+            background-color: white;
+        }
+        
+        .section-title {
+            text-align: center;
+            margin-bottom: 50px;
+        }
+        
+        .section-title h2 {
+            font-size: 36px;
+            color: #1a3e72;
+            margin-bottom: 15px;
+        }
+        
+        .section-title p {
+            color: #666;
+            max-width: 700px;
+            margin: 0 auto;
+        }
+        
+        .services-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+        }
+        
+        .service-card {
+            background-color: #f9f9f9;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+            transition: transform 0.3s;
+        }
+        
+        .service-card:hover {
+            transform: translateY(-10px);
+        }
+        
+        .service-img {
+            height: 200px;
+            overflow: hidden;
+        }
+        
+        .service-img img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: transform 0.5s;
+        }
+        
+        .service-card:hover .service-img img {
+            transform: scale(1.1);
+        }
+        
+        .service-content {
+            padding: 20px;
+        }
+        
+        .service-content h3 {
+            font-size: 22px;
+            margin-bottom: 10px;
+            color: #1a3e72;
+        }
+        
+        /* Gallery Section */
+        .gallery {
+            padding: 80px 0;
+            background-color: #f5f5f5;
+        }
+        
+        .gallery-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+        }
+        
+        .gallery-item {
+            position: relative;
+            overflow: hidden;
+            border-radius: 8px;
+            box-shadow: 0 3px 10px rgba(0,0,0,0.2);
+            height: 250px;
+        }
+        
+        .gallery-item img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: transform 0.5s;
+        }
+        
+        .gallery-item:hover img {
+            transform: scale(1.1);
+        }
+        
+        /* About Section */
+        .about {
+            padding: 80px 0;
+            background-color: white;
+        }
+        
+        .about-content {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 50px;
+            align-items: center;
+        }
+        
+        .about-img {
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+        }
+        
+        .about-img img {
+            width: 100%;
+            height: auto;
+            display: block;
+        }
+        
+        .about-text h2 {
+            font-size: 36px;
+            color: #1a3e72;
+            margin-bottom: 20px;
+        }
+        
+        .about-text p {
+            margin-bottom: 15px;
+            color: #555;
+        }
+        
+        /* Contact Section */
+        .contact {
+            padding: 80px 0;
+            background-color: #f5f5f5;
+        }
+        
+        .contact-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 50px;
+        }
+        
+        .contact-info {
+            margin-bottom: 30px;
+        }
+        
+        .contact-info h3 {
+            font-size: 24px;
+            color: #1a3e72;
+            margin-bottom: 20px;
+        }
+        
+        .contact-details {
+            margin-bottom: 30px;
+        }
+        
+        .contact-details p {
+            margin-bottom: 10px;
+            display: flex;
+            align-items: center;
+        }
+        
+        .contact-details i {
+            margin-right: 10px;
+            color: #ffcc00;
+            font-size: 20px;
+        }
+        
+        .social-links a {
+            display: inline-block;
+            margin-right: 15px;
+            color: #1a3e72;
+            font-size: 24px;
+            transition: color 0.3s;
+        }
+        
+        .social-links a:hover {
+            color: #ffcc00;
+        }
+        
+        .contact-form input,
+        .contact-form textarea {
+            width: 100%;
+            padding: 12px;
+            margin-bottom: 20px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            font-size: 16px;
+        }
+        
+        .contact-form textarea {
+            height: 150px;
+            resize: vertical;
+        }
+        
+        /* Footer */
+        footer {
+            background-color: #1a3e72;
+            color: white;
+            padding: 30px 0;
+            text-align: center;
+        }
+        
+        .footer-content {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+        }
+        
+        .footer-logo img {
+            height: 50px;
+            margin-bottom: 10px;
+        }
+        
+        .footer-links ul {
+            display: flex;
+            list-style: none;
+            margin-bottom: 20px;
+        }
+        
+        .footer-links ul li {
+            margin-right: 20px;
+        }
+        
+        .footer-links ul li a {
+            color: white;
+            text-decoration: none;
+            transition: color 0.3s;
+        }
+        
+        .footer-links ul li a:hover {
+            color: #ffcc00;
+        }
+        
+        .copyright {
+            width: 100%;
+            margin-top: 20px;
+            padding-top: 20px;
+            border-top: 1px solid rgba(255,255,255,0.1);
+            font-size: 14px;
+        }
+        
+        /* Responsive Styles */
+        @media (max-width: 768px) {
+            .header-container {
+                flex-direction: column;
+                text-align: center;
+            }
+            
+            nav ul {
+                margin-top: 20px;
+                justify-content: center;
+            }
+            
+            nav ul li {
+                margin: 0 10px;
+            }
+            
+            .hero-content h2 {
+                font-size: 32px;
+            }
+            
+            .hero-content p {
+                font-size: 18px;
+            }
+            
+            .about-content {
+                grid-template-columns: 1fr;
+            }
+            
+            .about-img {
+                order: -1;
+            }
+        }
+    </style>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="container header-container">
+            <div class="logo">
+                <img src="C:\Users\mukoppul\Downloads\sri-harsha-stickering\sri-harsha-stickering\img\full_logo.jpg" alt="Sri Harsha Stickering Logo">
+                <div class="logo-text">
+                    <h1> <p style="font-size: 24px; color: white; font-family: 'Victory Cartoon';">Sri Harsha Stickering</p></h1>
+                    <p>The Sticker Pros</p>
+                </div>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#gallery">Gallery</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="container hero-content">
+            <h2>Transform Your Vehicle with Premium Graphics</h2>
+            <p>Professional vehicle Graphics,Stickering and Engraving services with high-quality materials and precision application.</p>
+            <a href="#contact" class="btn">Get a Free Quote</a>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section class="services" id="services">
+        <div class="container">
+            <div class="section-title">
+                <h2>Our Services</h2>
+                <p>We offer a wide range of vehicle graphics and stickering solutions to meet all your needs.</p>
+            </div>
+            <div class="services-grid">
+                <div class="service-card">
+                    <div class="service-img">
+                        <img src="C:\Users\mukoppul\Downloads\sri-harsha-stickering\sri-harsha-stickering\img\service_1.jpg" alt="Wheel Rims">
+                    </div>
+                    <div class="service-content">
+                        <h3>Wheel Rims</h3>
+                        <p>Adding radium stickers to your bike's wheel rims can make them stand out, especially at night. They improve visual recognition and can significantly reduce the risk of accidents.</p>
+                    </div>
+                </div>
+                <div class="service-card">
+                    <div class="service-img">
+                        <img src="C:\Users\mukoppul\Downloads\sri-harsha-stickering\sri-harsha-stickering\img\service_2.jpg" alt="Body Graphics">
+                    </div>
+                    <div class="service-content">
+                        <h3>Body Graphics</h3>
+                        <p>Applying radium stickers to the body panels of your car can create a striking look. You can choose from a variety of designs, including stripes, logos, and custom graphics.</p>
+                    </div>
+                </div>
+                <div class="service-card">
+                    <div class="service-img">
+                        <img src="C:\Users\mukoppul\Downloads\sri-harsha-stickering\sri-harsha-stickering\img\service_3.jpg" alt="Name Stickers">
+                    </div>
+                    <div class="service-content">
+                        <h3>Name Stickers</h3>
+                        <p>Personalize your car with stylish name radium stickers for the front and back design. These stickers can add a regal touch to your car's look.</p>
+                    </div>
+                </div>
+                <div class="service-card">
+                    <div class="service-img">
+                        <img src="C:\Users\mukoppul\Downloads\sri-harsha-stickering\sri-harsha-stickering\img\service_4.jpg" alt="Number Plates">
+                    </div>
+                    <div class="service-content">
+                        <h3>Number Plates</h3>
+                        <p>Laser machines can cut and engrave vehicle number plates with high precision, ensuring compliance with legal standards.</p>
+                    </div>
+                </div>
+                <div class="service-card">
+                    <div class="service-img">
+                        <img src="https://images.unsplash.com/photo-1492144534655-ae79c964c9d7?ixlib=rb-1.2.1&auto=format&fit=crop&w=700&q=80" alt="Window Tinting">
+                    </div>
+                    <div class="service-content">
+                        <h3>Window Tinting</h3>
+                        <p>Premium window films for privacy, UV protection, and enhanced aesthetics.</p>
+                    </div>
+                </div>
+                <div class="service-card">
+                    <div class="service-img">
+                        <img src="C:\Users\mukoppul\Downloads\sri-harsha-stickering\sri-harsha-stickering\img\service_5.jpg" alt="Engraving">
+                    </div>
+                    <div class="service-content">
+                        <h3>Engraving</h3>
+                        <p>Laser engraving can be used for personalizing items like Keychains,engraved memorial plaque and gifts.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gallery Section -->
+    <section class="gallery" id="gallery">
+        <div class="container">
+            <div class="section-title">
+                <h2>Our Work Gallery</h2>
+                <p>Browse through some of our recent projects and transformations.</p>
+            </div>
+            <div class="gallery-grid">
+                <div class="gallery-item">
+                    <img src="C:\Users\mukoppul\Downloads\sri-harsha-stickering\sri-harsha-stickering\img\gallery_1.jpg" alt="Gallery Image 1">
+                </div>
+                <div class="gallery-item">
+                    <img src="C:\Users\mukoppul\Downloads\sri-harsha-stickering\sri-harsha-stickering\img\gallery_2.jpg" alt="Gallery Image 2">
+                </div>
+                <div class="gallery-item">
+                    <img src="C:\Users\mukoppul\Downloads\sri-harsha-stickering\sri-harsha-stickering\img\gallery_3.jpg" alt="Gallery Image 3">
+                </div>
+                <div class="gallery-item">
+                    <img src="C:\Users\mukoppul\Downloads\sri-harsha-stickering\sri-harsha-stickering\img\gallery_9.jpg" alt="Gallery Image 4">
+                </div>
+                <div class="gallery-item">
+                    <img src="C:\Users\mukoppul\Downloads\sri-harsha-stickering\sri-harsha-stickering\img\gallery_6.jpg" alt="Gallery Image 5">
+                </div>
+                <div class="gallery-item">
+                    <img src="C:\Users\mukoppul\Downloads\sri-harsha-stickering\sri-harsha-stickering\img\gallery_5.jpg" alt="Gallery Image 6">
+                </div>
+                <div class="gallery-item">
+                    <img src="C:\Users\mukoppul\Downloads\sri-harsha-stickering\sri-harsha-stickering\img\gallery_7.jpg" alt="Gallery Image 7">
+                </div>
+                <div class="gallery-item">
+                    <img src="C:\Users\mukoppul\Downloads\sri-harsha-stickering\sri-harsha-stickering\img\gallery_4.jpg" alt="Gallery Image 8">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="about" id="about">
+        <div class="container">
+            <div class="about-content">
+                <div class="about-text">
+                    <h2>About Sri Harsha Stickering</h2>
+                    <p>Founded in 2010, Sri Harsha Stickering has grown to become a leading provider of premium vehicle graphics and Stickering services in the region. Our team of skilled professionals combines artistic vision with technical expertise to deliver exceptional results.</p>
+                    <p>We use only the highest quality materials from trusted manufacturers to ensure durability, vibrant colors, and perfect finishes that stand the test of time.</p>
+                    <p>Our commitment to excellence and customer satisfaction has earned us a reputation as the go-to shop for vehicle customization, Radium stickering for vehicles can enhance visibility and add a unique style to your vehicle.</p>
+                    <p>Whether you're looking to personalize your private vehicle or create mobile advertising for your business, we have the skills and experience to bring your vision to life.</p>
+                </div>
+                <div class="about-img">
+                    <img src="C:\Users\mukoppul\Downloads\sri-harsha-stickering\sri-harsha-stickering\img\img_2.jpg" alt="Our Workshop">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact" id="contact">
+        <div class="container">
+            <div class="section-title">
+                <h2>Contact Us</h2>
+                <p>Get in touch for a free consultation or quote for your vehicle graphics project.</p>
+            </div>
+            <div class="contact-container">
+                <div class="contact-info">
+                    <h3>Our Contact Details</h3>
+                    <div class="contact-details">
+                        <p><i class="fas fa-map-marker-alt"></i> New Municipal Office Rd, Satyanarayana Puram, Gudivada,<br> Andhra Pradesh 521301</p>
+			<p><i class="fas fa-phone"></i> +91 9440591807</p>
+                        <p><i class="fas fa-envelope"></i> Harshapulavarthi06@gmail.com</p>
+                        <p><i class="fas fa-clock"></i> Mon-Sat: 9:00 AM - 10:00 PM</p>
+                    </div>
+                    <h3>Follow Us</h3>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+                <div class="contact-form">
+                    <form action="https://formspree.io/f/xkgjkpng" method="POST">
+                        <input type="text" name="name" placeholder="Your Name" required>
+                        <input type="email" name="email" placeholder="Your Email" required>
+                        <input type="tel" name="phone" placeholder="Your Phone Number">
+                        <select name="service" required>
+                            <option value="">Select a Service</option>
+                            <option value="full-wrap">Wheel Rims</option>
+                            <option value="partial-wrap">Body Graphics</option>
+                            <option value="commercial">Name Stickers</option>
+                            <option value="decals">Number Plates</option>
+                            <option value="tinting">Window Tinting</option>
+                            <option value="ppf">Engraving</option>
+                        </select>
+                        <textarea name="message" placeholder="Your Message / Project Details" required></textarea>
+                        <button type="submit" class="btn">Send Message</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <img src="C:\Users\mukoppul\Downloads\sri-harsha-stickering\sri-harsha-stickering\img\logo.jpg" alt="Sri Harsha Stickering Logo">
+		    <p style="font-size:16px; font-family: 'Victory Cartoon';">Sri Harsha Stickering</p>
+                    <p style="font-size:10px; ">The Sticker Pros</p>
+                </div>
+                <div class="footer-links">
+                    <ul>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#services">Services</a></li>
+                        <li><a href="#gallery">Gallery</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="copyright">
+                    <p>&copy; 2025 Sri Harsha Stickering. All Rights Reserved.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

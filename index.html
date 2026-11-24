@@ -1,643 +1,268 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sri Harsha Stickering - The Sticker Pros</title>
-	<!-- Open Graph (Facebook, WhatsApp, LinkedIn) -->
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Sri Harsha Stickering – Vehicle Radium Stickers, Graphics &amp; Laser Engraving in Gudivada</title>
+<meta name="description" content="Radium stickering, body graphics, name stickers, number plates, window tinting and laser engraving in Gudivada, Andhra Pradesh. Open Mon–Sat, 9 AM–10 PM.">
+<meta property="og:title" content="Sri Harsha Stickering – The Sticker Pros">
 <meta property="og:image" content="https://sriharshastickering.netlify.app/full_logo.jpg">
-<!-- Twitter Card -->
+<meta property="og:type" content="website">
+<meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:image" content="https://sriharshastickering.netlify.app/full_logo.jpg">
-    <style>
-        /* Global Styles */
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-            font-family: 'Arial', sans-serif;
-        }
-        
-        body {
-            background-color: #f5f5f5;
-            color: #333;
-            line-height: 1.6;
-        }
-        
-        .container {
-            max-width: 1200px;
-            margin: 0 auto;
-            padding: 0 20px;
-        }
-        
-        /* Header Styles */
-        header {
-            background-color: #1a3e72;
-            color: white;
-            padding: 20px 0;
-            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
-        }
-        
-        .header-container {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-        }
-        
-        .logo {
-            display: flex;
-            align-items: center;
-        }
-        
-        .logo img {
-            height: 60px;
-            margin-right: 15px;
-        }
-        
-        .logo-text h1 {
-            font-size: 24px;
-            margin-bottom: 5px;
-        }
-        
-        .logo-text p {
-            font-size: 14px;
-            opacity: 0.8;
-        }
-        
-        nav ul {
-            display: flex;
-            list-style: none;
-        }
-        
-        nav ul li {
-            margin-left: 20px;
-        }
-        
-        nav ul li a {
-            color: white;
-            text-decoration: none;
-            font-weight: 600;
-            transition: color 0.3s;
-        }
-        
-        nav ul li a:hover {
-            color: #ffcc00;
-        }
-        
-        /* Hero Section */
-        .hero {
-            background-image: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('/background_1.jpg');
-            background-size: cover;
-            background-position: center;
-            height: 500px;
-            display: flex;
-            align-items: center;
-            text-align: center;
-            color: white;
-        }
-        
-        .hero-content h2 {
-            font-size: 42px;
-            margin-bottom: 20px;
-        }
-        
-        .hero-content p {
-            font-size: 20px;
-            margin-bottom: 30px;
-            max-width: 800px;
-            margin-left: auto;
-            margin-right: auto;
-        }
-        
-        .btn {
-            display: inline-block;
-            background-color: #ffcc00;
-            color: #1a3e72;
-            padding: 12px 30px;
-            border-radius: 4px;
-            text-decoration: none;
-            font-weight: bold;
-            transition: all 0.3s;
-        }
-        
-        .btn:hover {
-            background-color: #e6b800;
-            transform: translateY(-2px);
-        }
-        
-        /* Services Section */
-        .services {
-            padding: 80px 0;
-            background-color: white;
-        }
-        
-        .section-title {
-            text-align: center;
-            margin-bottom: 50px;
-        }
-        
-        .section-title h2 {
-            font-size: 36px;
-            color: #1a3e72;
-            margin-bottom: 15px;
-        }
-        
-        .section-title p {
-            color: #666;
-            max-width: 700px;
-            margin: 0 auto;
-        }
-        
-        .services-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-            gap: 30px;
-        }
-        
-        .service-card {
-            background-color: #f9f9f9;
-            border-radius: 8px;
-            overflow: hidden;
-            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
-            transition: transform 0.3s;
-        }
-        
-        .service-card:hover {
-            transform: translateY(-10px);
-        }
-        
-        .service-img {
-            height: 200px;
-            overflow: hidden;
-        }
-        
-        .service-img img {
-            width: 100%;
-            height: 100%;
-            object-fit: cover;
-            transition: transform 0.5s;
-        }
-        
-        .service-card:hover .service-img img {
-            transform: scale(1.1);
-        }
-        
-        .service-content {
-            padding: 20px;
-        }
-        
-        .service-content h3 {
-            font-size: 22px;
-            margin-bottom: 10px;
-            color: #1a3e72;
-        }
-        
-        /* Gallery Section */
-        .gallery {
-            padding: 80px 0;
-            background-color: #f5f5f5;
-        }
-        
-        .gallery-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-            gap: 20px;
-        }
-        
-        .gallery-item {
-            position: relative;
-            overflow: hidden;
-            border-radius: 8px;
-            box-shadow: 0 3px 10px rgba(0,0,0,0.2);
-            height: 250px;
-        }
-        
-        .gallery-item img {
-            width: 100%;
-            height: 100%;
-            object-fit: cover;
-            transition: transform 0.5s;
-        }
-        
-        .gallery-item:hover img {
-            transform: scale(1.1);
-        }
-        
-        /* About Section */
-        .about {
-            padding: 80px 0;
-            background-color: white;
-        }
-        
-        .about-content {
-            display: grid;
-            grid-template-columns: 1fr 1fr;
-            gap: 50px;
-            align-items: center;
-        }
-        
-        .about-img {
-            border-radius: 8px;
-            overflow: hidden;
-            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
-        }
-        
-        .about-img img {
-            width: 100%;
-            height: auto;
-            display: block;
-        }
-        
-        .about-text h2 {
-            font-size: 36px;
-            color: #1a3e72;
-            margin-bottom: 20px;
-        }
-        
-        .about-text p {
-            margin-bottom: 15px;
-            color: #555;
-        }
-        
-        /* Contact Section */
-        .contact {
-            padding: 80px 0;
-            background-color: #f5f5f5;
-        }
-        
-        .contact-container {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-            gap: 50px;
-        }
-        
-        .contact-info {
-            margin-bottom: 30px;
-        }
-        
-        .contact-info h3 {
-            font-size: 24px;
-            color: #1a3e72;
-            margin-bottom: 20px;
-        }
-        
-        .contact-details {
-            margin-bottom: 30px;
-        }
-        
-        .contact-details p {
-            margin-bottom: 10px;
-            display: flex;
-            align-items: center;
-        }
-        
-        .contact-details i {
-            margin-right: 10px;
-            color: #ffcc00;
-            font-size: 20px;
-        }
-        
-        .social-links a {
-            display: inline-block;
-            margin-right: 15px;
-            color: #1a3e72;
-            font-size: 24px;
-            transition: color 0.3s;
-        }
-        
-        .social-links a:hover {
-            color: #ffcc00;
-        }
-        
-        .contact-form input,
-        .contact-form textarea {
-            width: 100%;
-            padding: 12px;
-            margin-bottom: 20px;
-            border: 1px solid #ddd;
-            border-radius: 4px;
-            font-size: 16px;
-        }
-        
-        .contact-form textarea {
-            height: 150px;
-            resize: vertical;
-        }
-        
-        /* Footer */
-        footer {
-            background-color: #1a3e72;
-            color: white;
-            padding: 30px 0;
-            text-align: center;
-        }
-        
-        .footer-content {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            flex-wrap: wrap;
-        }
-        
-        .footer-logo img {
-            height: 50px;
-            margin-bottom: 10px;
-        }
-        
-        .footer-links ul {
-            display: flex;
-            list-style: none;
-            margin-bottom: 20px;
-        }
-        
-        .footer-links ul li {
-            margin-right: 20px;
-        }
-        
-        .footer-links ul li a {
-            color: white;
-            text-decoration: none;
-            transition: color 0.3s;
-        }
-        
-        .footer-links ul li a:hover {
-            color: #ffcc00;
-        }
-        
-        .copyright {
-            width: 100%;
-            margin-top: 20px;
-            padding-top: 20px;
-            border-top: 1px solid rgba(255,255,255,0.1);
-            font-size: 14px;
-        }
-        
-        /* Responsive Styles */
-        @media (max-width: 768px) {
-            .header-container {
-                flex-direction: column;
-                text-align: center;
-            }
-            
-            nav ul {
-                margin-top: 20px;
-                justify-content: center;
-            }
-            
-            nav ul li {
-                margin: 0 10px;
-            }
-            
-            .hero-content h2 {
-                font-size: 32px;
-            }
-            
-            .hero-content p {
-                font-size: 18px;
-            }
-            
-            .about-content {
-                grid-template-columns: 1fr;
-            }
-            
-            .about-img {
-                order: -1;
-            }
-        }
-    </style>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-	<!-- Standard Favicon (works in most browsers) -->
-<link rel="icon" href="favicon.ico" type="image/x-icon">
-<!-- For better browser support (optional) -->
-<link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
-<!-- For modern browsers (PNG/SVG) -->
-<link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
-<link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
-<!-- Apple Touch Icon (for iOS/Safari) -->
+<meta name="theme-color" content="#073d2b">
+<link rel="icon" href="/favicon.ico" type="image/x-icon">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
 <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
-<!-- Android/Chrome -->
 <link rel="manifest" href="/site.webmanifest">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@600;700;800&family=Barlow:wght@400;500;600&display=swap" rel="stylesheet">
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"LocalBusiness","name":"Sri Harsha Stickering","telephone":"+919440591807","email":"Harshapulavarthi06@gmail.com","foundingDate":"2010","address":{"@type":"PostalAddress","streetAddress":"New Municipal Office Rd, Satyanarayana Puram","addressLocality":"Gudivada","addressRegion":"Andhra Pradesh","postalCode":"521301","addressCountry":"IN"},"openingHours":"Mo-Sa 09:00-22:00"}
+</script>
+<style>
+:root{
+  --sign:#0a5c40; --sign-deep:#073d2b; --paper:#f6f6f1; --ink:#16201b; --muted:#5b665f;
+  --amber:#ffb400; --line:#d9dcd3; --card:#fff;
+  --f-head:"Barlow Condensed","Arial Narrow",Impact,sans-serif;
+  --f-body:"Barlow",system-ui,-apple-system,"Segoe UI",sans-serif;
+}
+@media (prefers-color-scheme:dark){
+  :root{--paper:#101612;--ink:#eef1ea;--muted:#a3ada5;--line:#26302a;--card:#18211b}
+}
+*{box-sizing:border-box;margin:0}
+html{scroll-behavior:smooth;scroll-padding-top:72px}
+body{font:17px/1.6 var(--f-body);background:var(--paper);color:var(--ink);-webkit-text-size-adjust:100%}
+img{display:block;max-width:100%}
+a{color:inherit}
+:focus-visible{outline:3px solid var(--amber);outline-offset:3px}
+.wrap{width:min(1120px,100% - 40px);margin-inline:auto}
+h1,h2,h3{font-family:var(--f-head);line-height:1;letter-spacing:.01em}
+h2{font-size:clamp(2.2rem,5vw,3.4rem);font-weight:800}
+.lead{color:var(--muted);max-width:56ch;margin-top:12px}
+section{padding:84px 0}
+
+/* header */
+header{position:sticky;top:0;z-index:20;background:var(--sign-deep);color:#fff;border-bottom:3px solid var(--amber)}
+.bar{display:flex;align-items:center;justify-content:space-between;height:64px;gap:16px}
+.brand{display:flex;align-items:center;gap:10px;text-decoration:none;font:800 1.35rem/1 var(--f-head)}
+.brand img{width:38px;height:38px;border-radius:50%;object-fit:cover}
+nav ul{display:flex;gap:26px;list-style:none;padding:0}
+nav a{text-decoration:none;font-weight:600;font-size:.95rem;opacity:.9}
+nav a:hover{opacity:1;text-decoration:underline;text-underline-offset:6px;text-decoration-color:var(--amber)}
+.call{background:var(--amber);color:#1a1300;font-weight:700;text-decoration:none;padding:9px 16px;border-radius:6px;white-space:nowrap}
+.menu{display:none;background:none;border:2px solid #fff;color:#fff;border-radius:6px;padding:7px 11px;font:700 .95rem var(--f-body);cursor:pointer}
+@media(max-width:820px){
+  .menu{display:block}
+  nav{display:none;position:absolute;top:100%;left:0;right:0;background:var(--sign-deep);padding:14px 20px 20px;border-bottom:3px solid var(--amber)}
+  nav.open{display:block}
+  nav ul{flex-direction:column;gap:6px}
+  nav a{display:block;padding:10px 0;font-size:1.1rem}
+  .call{margin-left:auto}
+}
+
+/* hero: road sign + headlight */
+.hero{position:relative;background:linear-gradient(rgba(10,92,64,.84),rgba(7,61,43,.92)),url('/background_1.jpg') center/cover var(--sign);color:#fff;padding:0;overflow:hidden;isolation:isolate;--x:70%;--y:30%}
+.hero::before{content:"";position:absolute;inset:14px;border:3px solid #fff;border-radius:18px;opacity:.9;pointer-events:none;z-index:2}
+.hero::after{content:"";position:absolute;inset:0;z-index:1;pointer-events:none;
+  background:radial-gradient(circle 260px at var(--x) var(--y),rgba(255,255,255,.28),rgba(255,255,255,.08) 55%,transparent 75%);mix-blend-mode:soft-light}
+.hero .wrap{position:relative;z-index:3;padding:96px 0 88px;display:grid;gap:28px}
+.hero h1{font-size:clamp(3.2rem,11vw,7.5rem);font-weight:800;text-transform:uppercase;max-width:11ch;line-height:.92;
+  color:#e8f3ec;text-shadow:0 0 0 transparent}
+.hero p{font-size:1.2rem;max-width:44ch;color:#d6e8de}
+.actions{display:flex;flex-wrap:wrap;gap:12px}
+.btn{display:inline-flex;align-items:center;gap:8px;padding:14px 22px;border-radius:8px;font-weight:700;text-decoration:none;border:2px solid transparent;cursor:pointer;font:700 1rem var(--f-body)}
+.btn.amber{background:var(--amber);color:#1a1300}
+.btn.ghost{border-color:#fff;color:#fff}
+.btn.wa{background:#1fa855;color:#fff}
+.btn:hover{filter:brightness(1.08)}
+.facts{display:flex;flex-wrap:wrap;gap:8px 26px;font-weight:600;color:#fff;margin-top:8px}
+.facts span::before{content:"";display:inline-block;width:9px;height:9px;background:var(--amber);border-radius:50%;margin-right:8px}
+
+/* services */
+.svc{display:grid;grid-template-columns:repeat(auto-fill,minmax(310px,1fr));gap:22px;margin-top:40px}
+.card{background:var(--card);border:1px solid var(--line);border-radius:10px;overflow:hidden;display:flex;flex-direction:column}
+.card .ph{aspect-ratio:4/3;background:var(--sign-deep);overflow:hidden}
+.card .ph img{width:100%;height:100%;object-fit:cover}
+.card .ph.none{display:grid;place-items:center;color:var(--amber);font:800 1.6rem var(--f-head);background:repeating-linear-gradient(135deg,var(--sign-deep) 0 14px,#0b4a34 14px 28px)}
+.card div.b{padding:20px 22px 24px}
+.card h3{font-size:1.7rem;font-weight:700;margin-bottom:8px}
+.card p{color:var(--muted);font-size:.98rem}
+.card a.q{display:inline-block;margin-top:14px;font-weight:700;color:var(--sign);text-underline-offset:4px}
+@media(prefers-color-scheme:dark){.card a.q{color:var(--amber)}}
+
+/* gallery */
+.gal{display:grid;grid-template-columns:repeat(auto-fill,minmax(250px,1fr));gap:12px;margin-top:36px}
+.gal button{padding:0;border:0;background:var(--sign-deep);border-radius:8px;overflow:hidden;cursor:zoom-in;aspect-ratio:1}
+.gal img{width:100%;height:100%;object-fit:cover;transition:transform .3s}
+.gal button:hover img{transform:scale(1.04)}
+dialog{border:0;padding:0;background:transparent;max-width:min(94vw,1000px);max-height:92vh}
+dialog::backdrop{background:rgba(0,0,0,.85)}
+dialog img{max-height:88vh;margin:auto;border-radius:8px}
+dialog form{text-align:right}
+dialog button{background:var(--amber);border:0;border-radius:6px;padding:8px 14px;font-weight:700;margin-bottom:8px;cursor:pointer}
+
+/* about */
+.about{background:var(--sign-deep);color:#fff}
+.about .grid{display:grid;grid-template-columns:1.1fr .9fr;gap:48px;align-items:center}
+.about p{color:#d6e8de;margin-top:16px}
+.about img{border-radius:10px;border:3px solid var(--amber);width:100%;aspect-ratio:4/3;object-fit:cover}
+.stats{display:flex;gap:34px;margin-top:28px;flex-wrap:wrap}
+.stats b{display:block;font:800 3rem var(--f-head);color:var(--amber);line-height:1}
+.stats span{font-size:.92rem;color:#d6e8de}
+@media(max-width:800px){.about .grid{grid-template-columns:1fr}}
+
+/* contact */
+.cgrid{display:grid;grid-template-columns:1fr 1fr;gap:40px;margin-top:36px}
+@media(max-width:800px){.cgrid{grid-template-columns:1fr}}
+.info p{margin-bottom:14px}
+.info b{display:block;font-family:var(--f-head);font-size:1.25rem;letter-spacing:.02em}
+form.q{display:grid;gap:14px;background:var(--card);border:1px solid var(--line);padding:24px;border-radius:10px}
+label{font-weight:600;font-size:.95rem;display:grid;gap:6px}
+input,select,textarea{font:inherit;padding:12px;border:1px solid var(--line);border-radius:6px;background:var(--paper);color:var(--ink);width:100%}
+textarea{min-height:110px;resize:vertical}
+.hp{position:absolute;left:-9999px}
+
+footer{background:var(--sign-deep);color:#cfe1d7;padding:28px 0;font-size:.92rem;border-top:3px solid var(--amber)}
+footer .wrap{display:flex;flex-wrap:wrap;justify-content:space-between;gap:10px}
+
+/* floating whatsapp */
+.fab{position:fixed;right:16px;bottom:16px;z-index:30;background:#1fa855;color:#fff;font-weight:700;text-decoration:none;padding:13px 18px;border-radius:999px;box-shadow:0 6px 18px rgba(0,0,0,.3)}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*{transition:none!important}}
+</style>
 </head>
 <body>
-    <!-- Header -->
-    <header>
-        <div class="container header-container">
-            <div class="logo">
-                <img src="/full_logo.jpg" alt="Sri Harsha Stickering Logo">
-                <div class="logo-text">
-                    <h1> <p style="font-size: 24px; color: white; font-family: 'Victory Cartoon';">Sri Harsha Stickering</p></h1>
-                    <p>The Sticker Pros</p>
-                </div>
-            </div>
-            <nav>
-                <ul>
-                    <li><a href="#home">Home</a></li>
-                    <li><a href="#services">Services</a></li>
-                    <li><a href="#gallery">Gallery</a></li>
-                    <li><a href="#about">About</a></li>
-                    <li><a href="#contact">Contact</a></li>
-                </ul>
-            </nav>
-        </div>
-    </header>
 
-    <!-- Hero Section -->
-    <section class="hero" id="home">
-        <div class="container hero-content">
-            <h2>Transform Your Vehicle with Premium Graphics</h2>
-            <p>Professional vehicle Graphics,Stickering and Engraving services with high-quality materials and precision application.</p>
-            <a href="#contact" class="btn">Get a Free Quote</a>
-        </div>
-    </section>
+<header>
+  <div class="wrap bar">
+    <a class="brand" href="#home"><img src="/logo.jpg" alt="" width="38" height="38">Sri Harsha Stickering</a>
+    <nav aria-label="Main" id="nav"><ul>
+      <li><a href="#home">Home</a></li><li><a href="#services">Services</a></li><li><a href="#gallery">Gallery</a></li>
+      <li><a href="#about">About</a></li><li><a href="#contact">Contact</a></li>
+    </ul></nav>
+    <a class="call" href="tel:+919440591807">Call now</a>
+    <button class="menu" id="menu" aria-expanded="false" aria-controls="nav">Menu</button>
+  </div>
+</header>
 
-    <!-- Services Section -->
-    <section class="services" id="services">
-        <div class="container">
-            <div class="section-title">
-                <h2>Our Services</h2>
-                <p>We offer a wide range of vehicle graphics and stickering solutions to meet all your needs.</p>
-            </div>
-            <div class="services-grid">
-                <div class="service-card">
-                    <div class="service-img">
-                        <img src="/service_1.jpg" alt="Wheel Rims">
-                    </div>
-                    <div class="service-content">
-                        <h3>Wheel Rims</h3>
-                        <p>Adding radium stickers to your bike's wheel rims can make them stand out, especially at night. They improve visual recognition and can significantly reduce the risk of accidents.</p>
-                    </div>
-                </div>
-                <div class="service-card">
-                    <div class="service-img">
-                        <img src="/service_2.jpg" alt="Body Graphics">
-                    </div>
-                    <div class="service-content">
-                        <h3>Body Graphics</h3>
-                        <p>Applying radium stickers to the body panels of your car can create a striking look. You can choose from a variety of designs, including stripes, logos, and custom graphics.</p>
-                    </div>
-                </div>
-                <div class="service-card">
-                    <div class="service-img">
-                        <img src="/service_3.jpg" alt="Name Stickers">
-                    </div>
-                    <div class="service-content">
-                        <h3>Name Stickers</h3>
-                        <p>Personalize your car with stylish name radium stickers for the front and back design. These stickers can add a regal touch to your car's look.</p>
-                    </div>
-                </div>
-                <div class="service-card">
-                    <div class="service-img">
-                        <img src="/service_4.jpg" alt="Number Plates">
-                    </div>
-                    <div class="service-content">
-                        <h3>Number Plates</h3>
-                        <p>Laser machines can cut and engrave vehicle number plates with high precision, ensuring compliance with legal standards.</p>
-                    </div>
-                </div>
-                <div class="service-card">
-                    <div class="service-img">
-                        <img src="https://images.unsplash.com/photo-1492144534655-ae79c964c9d7?ixlib=rb-1.2.1&auto=format&fit=crop&w=700&q=80" alt="Window Tinting">
-                    </div>
-                    <div class="service-content">
-                        <h3>Window Tinting</h3>
-                        <p>Premium window films for privacy, UV protection, and enhanced aesthetics.</p>
-                    </div>
-                </div>
-                <div class="service-card">
-                    <div class="service-img">
-                        <img src="/service_5.jpg" alt="Engraving">
-                    </div>
-                    <div class="service-content">
-                        <h3>Engraving</h3>
-                        <p>Laser engraving can be used for personalizing items like Keychains,engraved memorial plaque and gifts.</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
+<main id="home">
+<div class="hero" id="hero">
+  <div class="wrap">
+    <h1>Make your vehicle shine at night</h1>
+    <p>Radium stickers, body graphics, name stickers, number plates and laser engraving. Done by hand in Gudivada since 2010.</p>
+    <div class="actions">
+      <a class="btn amber" href="#contact">Get a free quote</a>
+      <a class="btn wa" href="https://wa.me/919440591807?text=Hi%20Sri%20Harsha%20Stickering%2C%20I%20want%20a%20quote%20for%20my%20vehicle." target="_blank" rel="noopener">WhatsApp us</a>
+    </div>
+    <div class="facts"><span>Open Mon–Sat, 9 AM–10 PM</span><span>Free consultation</span><span>Quality materials</span></div>
+  </div>
+</div>
 
-    <!-- Gallery Section -->
-    <section class="gallery" id="gallery">
-        <div class="container">
-            <div class="section-title">
-                <h2>Our Work Gallery</h2>
-                <p>Browse through some of our recent projects and transformations.</p>
-            </div>
-            <div class="gallery-grid">
-                <div class="gallery-item">
-                    <img src="/gallery_1.jpg" alt="Gallery Image 1">
-                </div>
-                <div class="gallery-item">
-                    <img src="/gallery_2.jpg" alt="Gallery Image 2">
-                </div>
-                <div class="gallery-item">
-                    <img src="/gallery_3.jpg" alt="Gallery Image 3">
-                </div>
-                <div class="gallery-item">
-                    <img src="/gallery_9.jpg" alt="Gallery Image 4">
-                </div>
-                <div class="gallery-item">
-                    <img src="/gallery_6.jpg" alt="Gallery Image 5">
-                </div>
-                <div class="gallery-item">
-                    <img src="/gallery_5.jpg" alt="Gallery Image 6">
-                </div>
-                <div class="gallery-item">
-                    <img src="/gallery_7.jpg" alt="Gallery Image 7">
-                </div>
-                <div class="gallery-item">
-                    <img src="/gallery_4.jpg" alt="Gallery Image 8">
-                </div>
-            </div>
-        </div>
-    </section>
+<section id="services">
+  <div class="wrap">
+    <h2>What we do</h2>
+    <p class="lead">Pick a service to ask for a price. Bring your bike or car, or send a photo on WhatsApp.</p>
+    <div class="svc">
+      <article class="card"><div class="ph"><img src="/service_1.jpg" alt="Radium stickers on bike wheel rims" loading="lazy"></div><div class="b"><h3>Wheel rims</h3><p>Radium stickers on your rims glow in headlights. They make your bike easy to spot at night and help prevent accidents.</p><a class="q" href="#contact" data-svc="Wheel Rims">Ask for a quote</a></div></article>
+      <article class="card"><div class="ph"><img src="/service_2.jpg" alt="Custom body graphics on a car" loading="lazy"></div><div class="b"><h3>Body graphics</h3><p>Stripes, logos and custom designs for your car's body panels.</p><a class="q" href="#contact" data-svc="Body Graphics">Ask for a quote</a></div></article>
+      <article class="card"><div class="ph"><img src="/service_3.jpg" alt="Radium name sticker on a car" loading="lazy"></div><div class="b"><h3>Name stickers</h3><p>Your name or your family's name in stylish radium letters, for the front and back of the car.</p><a class="q" href="#contact" data-svc="Name Stickers">Ask for a quote</a></div></article>
+      <article class="card"><div class="ph"><img src="/service_4.jpg" alt="Laser-cut vehicle number plate" loading="lazy"></div><div class="b"><h3>Number plates</h3><p>Laser-cut and engraved plates, precise and made to legal standards.</p><a class="q" href="#contact" data-svc="Number Plates">Ask for a quote</a></div></article>
+      <article class="card"><div class="ph none" role="img" aria-label="Window tinting">Window tinting</div><div class="b"><h3>Window tinting</h3><p>Quality films for privacy, UV protection and a cleaner look.</p><a class="q" href="#contact" data-svc="Window Tinting">Ask for a quote</a></div></article>
+      <article class="card"><div class="ph"><img src="/service_5.jpg" alt="Laser engraved keychains and plaques" loading="lazy"></div><div class="b"><h3>Laser engraving</h3><p>Keychains, memorial plaques and gifts engraved with your name, photo or message.</p><a class="q" href="#contact" data-svc="Engraving">Ask for a quote</a></div></article>
+    </div>
+  </div>
+</section>
 
-    <!-- About Section -->
-    <section class="about" id="about">
-        <div class="container">
-            <div class="about-content">
-                <div class="about-text">
-                    <h2>About Sri Harsha Stickering</h2>
-                    <p>Founded in 2010, Sri Harsha Stickering has grown to become a leading provider of premium vehicle graphics and Stickering services in the region. Our team of skilled professionals combines artistic vision with technical expertise to deliver exceptional results.</p>
-                    <p>We use only the highest quality materials from trusted manufacturers to ensure durability, vibrant colors, and perfect finishes that stand the test of time.</p>
-                    <p>Our commitment to excellence and customer satisfaction has earned us a reputation as the go-to shop for vehicle customization, Radium stickering for vehicles can enhance visibility and add a unique style to your vehicle.</p>
-                    <p>Whether you're looking to personalize your private vehicle or create mobile advertising for your business, we have the skills and experience to bring your vision to life.</p>
-                </div>
-                <div class="about-img">
-                    <img src="/img_2.jpg" alt="Our Workshop">
-                </div>
-            </div>
-        </div>
-    </section>
+<section id="gallery" style="background:color-mix(in srgb,var(--line) 35%,var(--paper))">
+  <div class="wrap">
+    <h2>Recent work</h2>
+    <p class="lead">Tap any photo to see it larger.</p>
+    <div class="gal" id="gal"></div>
+  </div>
+</section>
 
-    <!-- Contact Section -->
-    <section class="contact" id="contact">
-        <div class="container">
-            <div class="section-title">
-                <h2>Contact Us</h2>
-                <p>Get in touch for a free consultation or quote for your vehicle graphics project.</p>
-            </div>
-            <div class="contact-container">
-                <div class="contact-info">
-                    <h3>Our Contact Details</h3>
-                    <div class="contact-details">
-                        <p><i class="fas fa-map-marker-alt"></i> New Municipal Office Rd, Satyanarayana Puram, Gudivada,<br> Andhra Pradesh 521301</p>
-			<p><i class="fas fa-phone"></i> +91 9440591807</p>
-                        <p><i class="fas fa-envelope"></i> Harshapulavarthi06@gmail.com</p>
-                        <p><i class="fas fa-clock"></i> Mon-Sat: 9:00 AM - 10:00 PM</p>
-                    </div>
-                    <h3>Follow Us</h3>
-                    <div class="social-links">
-                        <a href="#"><i class="fab fa-facebook"></i></a>
-                        <a href="#"><i class="fab fa-instagram"></i></a>
-                        <a href="#"><i class="fab fa-twitter"></i></a>
-                        <a href="#"><i class="fab fa-youtube"></i></a>
-                    </div>
-                </div>
-                <div class="contact-form">
-                    <form name="contact" method="POST" data-netlify="true">
-                        <input type="text" name="name" placeholder="Your Name" required>
-                        <input type="email" name="email" placeholder="Your Email" required>
-                        <input type="tel" name="phone" placeholder="Your Phone Number">
-                        <select name="service" required>
-                            <option value="">Select a Service</option>
-                            <option value="Wheel-Rims">Wheel Rims</option>
-                            <option value="Body-Graphics">Body Graphics</option>
-                            <option value="Name-Stickers">Name Stickers</option>
-                            <option value="Number-Plates">Number Plates</option>
-                            <option value="Window-Tinting">Window Tinting</option>
-                            <option value="Engraving">Engraving</option>
-                        </select>
-                        <textarea name="message" placeholder="Your Message / Project Details" required></textarea>
-                        <button type="submit" class="btn">Send Message</button>
-                    </form>
-                </div>
-            </div>
-        </div>
-    </section>
+<section id="about" class="about">
+  <div class="wrap grid">
+    <div>
+      <h2>Gudivada's sticker shop since 2010</h2>
+      <p>We are a team of skilled craftspeople who combine design sense with careful application. Whether it's your own bike or car, or a vehicle you want to use for advertising, we build what you have in mind.</p>
+      <p>We use quality materials from trusted makers, so colours stay bright and finishes last. Radium stickers also make your vehicle easier to see at night.</p>
+      <div class="stats"><div><b>2010</b><span>Serving customers since</span></div><div><b>6</b><span>Services under one roof</span></div></div>
+    </div>
+    <img src="/img_2.jpg" alt="Inside the Sri Harsha Stickering workshop" loading="lazy">
+  </div>
+</section>
 
-    <!-- Footer -->
-    <footer>
-        <div class="container">
-            <div class="footer-content">
-                <div class="footer-logo">
-                    <img src="/logo.jpg" alt="Sri Harsha Stickering Logo">
-		    <p style="font-size:16px; font-family: 'Victory Cartoon';">Sri Harsha Stickering</p>
-                    <p style="font-size:10px; ">The Sticker Pros</p>
-                </div>
-                <div class="footer-links">
-                    <ul>
-                        <li><a href="#home">Home</a></li>
-                        <li><a href="#services">Services</a></li>
-                        <li><a href="#gallery">Gallery</a></li>
-                        <li><a href="#about">About</a></li>
-                        <li><a href="#contact">Contact</a></li>
-                    </ul>
-                </div>
-                <div class="copyright">
-                    <p>&copy; 2025 Sri Harsha Stickering. All Rights Reserved.</p>
-                </div>
-            </div>
-        </div>
-    </footer>
+<section id="contact">
+  <div class="wrap">
+    <h2>Get a free quote</h2>
+    <p class="lead">Tell us what you need. We'll reply with a price. Or just walk in.</p>
+    <div class="cgrid">
+      <div class="info">
+        <p><b>Visit the shop</b>New Municipal Office Rd, Satyanarayana Puram,<br>Gudivada, Andhra Pradesh 521301<br>
+          <a href="https://www.google.com/maps/search/?api=1&query=Sri+Harsha+Stickering+Gudivada" target="_blank" rel="noopener">Open in Google Maps</a></p>
+        <p><b>Call or WhatsApp</b><a href="tel:+919440591807">+91 94405 91807</a></p>
+        <p><b>Email</b><a href="mailto:Harshapulavarthi06@gmail.com">Harshapulavarthi06@gmail.com</a></p>
+        <p><b>Hours</b>Monday to Saturday, 9:00 AM – 10:00 PM</p>
+      </div>
+      <form class="q" name="quote" method="POST" data-netlify="true" netlify-honeypot="bot">
+        <input type="hidden" name="form-name" value="quote">
+        <p class="hp"><label>Leave empty <input name="bot"></label></p>
+        <label>Your name <input name="name" required autocomplete="name"></label>
+        <label>Phone number <input name="phone" type="tel" required autocomplete="tel"></label>
+        <label>Email (optional) <input name="email" type="email" autocomplete="email"></label>
+        <label>Service
+          <select name="service" id="svc">
+            <option>Wheel Rims</option><option>Body Graphics</option><option>Name Stickers</option>
+            <option>Number Plates</option><option>Window Tinting</option><option>Engraving</option>
+          </select>
+        </label>
+        <label>Vehicle and details <textarea name="message" placeholder="e.g. Royal Enfield, red radium stripes on rims"></textarea></label>
+        <button class="btn amber" type="submit">Send request</button>
+        <p style="font-size:.9rem;color:var(--muted)">We usually reply the same day.</p>
+      </form>
+    </div>
+  </div>
+</section>
+</main>
+
+<footer><div class="wrap"><span>© 2026 Sri Harsha Stickering. All rights reserved.</span><span>The Sticker Pros, Gudivada</span></div></footer>
+
+<a class="fab" href="https://wa.me/919440591807" target="_blank" rel="noopener" aria-label="Chat on WhatsApp">WhatsApp</a>
+
+<dialog id="lb"><form method="dialog"><button>Close</button></form><img id="lbimg" alt=""></dialog>
+
+<script>
+// Gallery (file names match your existing images)
+var files=["gallery_1","gallery_2","gallery_3","gallery_9","gallery_6","gallery_5","gallery_7","gallery_4"];
+var gal=document.getElementById("gal"),lb=document.getElementById("lb"),lbimg=document.getElementById("lbimg");
+files.forEach(function(f,i){
+  var b=document.createElement("button");b.type="button";b.setAttribute("aria-label","Open photo "+(i+1));
+  b.innerHTML='<img loading="lazy" src="/'+f+'.jpg" alt="Vehicle stickering work, photo '+(i+1)+'">';
+  b.onclick=function(){lbimg.src="/"+f+".jpg";lbimg.alt="Vehicle stickering work, photo "+(i+1);lb.showModal()};
+  gal.appendChild(b);
+});
+lb.addEventListener("click",function(e){if(e.target===lb)lb.close()});
+
+// Pre-select service from a card's quote link
+document.querySelectorAll("[data-svc]").forEach(function(a){
+  a.addEventListener("click",function(){document.getElementById("svc").value=a.dataset.svc});
+});
+
+// Mobile menu
+var mb=document.getElementById("menu"),nv=document.getElementById("nav");
+mb.onclick=function(){var o=nv.classList.toggle("open");mb.setAttribute("aria-expanded",o);mb.textContent=o?"Close":"Menu"};
+nv.addEventListener("click",function(e){if(e.target.tagName==="A"){nv.classList.remove("open");mb.textContent="Menu";mb.setAttribute("aria-expanded","false")}});
+
+// Headlight: light follows pointer or finger across the hero
+var hero=document.getElementById("hero");
+function move(e){var p=e.touches?e.touches[0]:e,r=hero.getBoundingClientRect();
+  hero.style.setProperty("--x",(p.clientX-r.left)+"px");hero.style.setProperty("--y",(p.clientY-r.top)+"px")}
+if(!matchMedia("(prefers-reduced-motion:reduce)").matches){
+  hero.addEventListener("pointermove",move);hero.addEventListener("touchmove",move,{passive:true});
+}
+</script>
 </body>
 </html>

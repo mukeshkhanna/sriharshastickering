@@ -1,0 +1,13 @@
+{
+  "name": "Sri Harsha Stickering",
+  "short_name": "Sri Harsha",
+  "description": "Radium stickers, vehicle graphics and laser engraving in Gudivada.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#073d2b",
+  "theme_color": "#073d2b",
+  "icons": [
+    {"src": "/icon-192.png", "sizes": "192x192", "type": "image/png"},
+    {"src": "/icon-512.png", "sizes": "512x512", "type": "image/png"}
+  ]
+}

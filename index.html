@@ -8,19 +8,25 @@
 <meta property="og:title" content="Sri Harsha Stickering – Radium Stickers &amp; Vehicle Graphics, Gudivada">
 <meta property="og:description" content="Radium stickers and vehicle graphics in Gudivada. Get a free quote.">
 <meta property="og:type" content="website">
-<meta property="og:image" content="https://sriharshastickering.netlify.app/full_logo.jpg">
+<meta property="og:image" content="https://sriharshastickering.netlify.app/og-image.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:url" content="https://sriharshastickering.netlify.app/">
+<meta property="og:locale" content="en_IN">
 <meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:image" content="https://sriharshastickering.netlify.app/full_logo.jpg">
+<meta name="twitter:image" content="https://sriharshastickering.netlify.app/og-image.png">
 <meta name="theme-color" content="#073d2b">
-<link rel="icon" href="/favicon.svg" type="image/svg+xml">
-<link rel="icon" href="/favicon.ico" sizes="any">
-<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
-<link rel="manifest" href="/site.webmanifest">
+<link rel="icon" href="/favicon.ico?v=2" sizes="48x48">
+<link rel="icon" href="/favicon.svg?v=2" type="image/svg+xml">
+<link rel="apple-touch-icon" href="/apple-touch-icon.png?v=2">
+<link rel="manifest" href="/site.webmanifest?v=2">
+<link rel="canonical" href="https://sriharshastickering.netlify.app/">
+<meta name="robots" content="index, follow">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@600;700;800&family=Barlow:wght@400;500;600&display=swap" rel="stylesheet">
 <script type="application/ld+json">
-{"@context":"https://schema.org","@type":"LocalBusiness","name":"Sri Harsha Stickering","telephone":"+919440591807","email":"Harshapulavarthi06@gmail.com","foundingDate":"2010","image":"https://sriharshastickering.netlify.app/full_logo.jpg","address":{"@type":"PostalAddress","streetAddress":"New Municipal Office Rd, Satyanarayana Puram","addressLocality":"Gudivada","addressRegion":"Andhra Pradesh","postalCode":"521301","addressCountry":"IN"},"openingHours":"Mo-Sa 09:00-22:00"}
+{"@context":"https://schema.org","@type":"LocalBusiness","name":"Sri Harsha Stickering","telephone":"+919440591807","email":"Harshapulavarthi06@gmail.com","foundingDate":"2010","url":"https://sriharshastickering.netlify.app/","image":"https://sriharshastickering.netlify.app/og-image.png","logo":"https://sriharshastickering.netlify.app/icon-512.png","areaServed":"Gudivada, Andhra Pradesh","address":{"@type":"PostalAddress","streetAddress":"New Municipal Office Rd, Satyanarayana Puram","addressLocality":"Gudivada","addressRegion":"Andhra Pradesh","postalCode":"521301","addressCountry":"IN"},"openingHours":"Mo-Sa 09:00-22:00"}
 </script>
 <style>
 :root{
@@ -122,8 +128,8 @@ nav a:hover{opacity:1;text-decoration:underline;text-underline-offset:6px;text-d
 dialog{border:0;padding:0;background:transparent;max-width:min(94vw,1000px);max-height:92vh}
 dialog::backdrop{background:rgba(0,0,0,.88)}
 dialog img{max-height:86vh;margin:auto;border-radius:8px}
-dialog form{text-align:right}
-dialog button{background:var(--amber);border:0;border-radius:6px;padding:8px 14px;font-weight:700;margin-bottom:8px;cursor:pointer}
+.lbt{display:flex;justify-content:flex-end;gap:8px;margin-bottom:8px}
+.lbt button{background:var(--amber);color:#1a1300;border:0;border-radius:6px;padding:8px 16px;font:700 1rem var(--f-body);cursor:pointer}
 
 /* about */
 .about{background:var(--deep);color:#fff}
@@ -153,6 +159,8 @@ footer .fb{display:flex;align-items:center;gap:12px;color:#fff;font:800 1.3rem v
 footer img{width:44px;height:44px}
 
 /* mobile action bar */
+.skip{position:absolute;left:12px;top:-60px;z-index:50;background:var(--amber);color:#1a1300;padding:10px 16px;border-radius:6px;font-weight:700}
+.skip:focus{top:10px}
 .dock{position:fixed;left:0;right:0;bottom:0;z-index:30;display:grid;grid-template-columns:1fr 1fr;box-shadow:0 -4px 14px rgba(0,0,0,.25)}
 .dock a{text-align:center;text-decoration:none;font-weight:700;padding:15px 8px}
 .dock .c{background:var(--amber);color:#1a1300}.dock .w{background:#1fa855;color:#fff}
@@ -161,10 +169,11 @@ footer img{width:44px;height:44px}
 </style>
 </head>
 <body>
+<a class="skip" href="#services">Skip to content</a>
 
 <header>
   <div class="wrap bar">
-    <a class="brand" href="#home"><img src="/logo.svg" alt="" width="46" height="46"><span><b>Sri Harsha Stickering</b><small>Gudivada</small></span></a>
+    <a class="brand" href="#home"><img src="/logo.svg?v=2" alt="" width="46" height="46"><span><b>Sri Harsha Stickering</b><small>Gudivada</small></span></a>
     <nav aria-label="Main" id="nav"><ul>
       <li><a href="#home">Home</a></li><li><a href="#services">Services</a></li><li><a href="#gallery">Gallery</a></li>
       <li><a href="#about">About</a></li><li><a href="#contact">Contact</a></li>
@@ -175,19 +184,19 @@ footer img{width:44px;height:44px}
 </header>
 
 <main id="home">
-<div class="hero" id="hero">
+<section class="hero" id="hero" aria-labelledby="h1">
   <div class="wrap">
     <div>
-      <h1>Be seen on every road.<span>Day and night.</span></h1>
+      <h1 id="h1">Be seen on every road.<span>Day and night.</span></h1>
       <p>Radium stickers, body graphics, name stickers, number plates and laser engraving for your bike or car. Made by hand and fitted with care in Gudivada since 2010.</p>
       <div class="actions">
         <a class="btn amber" href="#contact">Get a free quote</a>
         <a class="btn wa" href="https://wa.me/919440591807?text=Hi%20Sri%20Harsha%20Stickering%2C%20I%20want%20a%20quote%20for%20my%20vehicle." target="_blank" rel="noopener">Send us a photo on WhatsApp</a>
       </div>
     </div>
-    <img class="badge" src="/logo.svg" alt="Sri Harsha Stickering badge" width="280" height="280">
+    <img class="badge" src="/logo.svg?v=2" alt="Sri Harsha Stickering badge" width="280" height="280">
   </div>
-</div>
+</section>
 <div class="strip"><div class="wrap">
   <div><b>Since 2010</b>Trusted in Gudivada</div>
   <div><b>6</b>Services under one roof</div>
@@ -200,19 +209,19 @@ footer img{width:44px;height:44px}
     <h2>What we make for your vehicle</h2>
     <p class="lead">Choose a service and tap “Get a price”. We’ll tell you the cost before we start.</p>
     <div class="svc">
-      <article class="card"><div class="ph"><img src="/service_1.jpg" alt="Radium stickers on bike wheel rims" loading="lazy"></div><div class="b"><h3>Wheel rims</h3><p>Radium stickers on your rims light up in headlights, so other drivers spot your bike from far away at night. Safer rides and a sharper look.</p><a class="q" href="#contact" data-svc="Wheel Rims">Get a price</a></div></article>
-      <article class="card"><div class="ph"><img src="/service_2.jpg" alt="Custom body graphics on a car" loading="lazy"></div><div class="b"><h3>Body graphics</h3><p>Stripes, logos or a fully custom design for your car’s body panels. Tell us the look you want and we’ll fit it neatly.</p><a class="q" href="#contact" data-svc="Body Graphics">Get a price</a></div></article>
-      <article class="card"><div class="ph"><img src="/service_3.jpg" alt="Radium name sticker on a car" loading="lazy"></div><div class="b"><h3>Name stickers</h3><p>Put your name, your family name or your business name on the front or back of your car in bold radium letters.</p><a class="q" href="#contact" data-svc="Name Stickers">Get a price</a></div></article>
-      <article class="card"><div class="ph"><img src="/service_4.jpg" alt="Laser-cut vehicle number plate" loading="lazy"></div><div class="b"><h3>Number plates</h3><p>Laser-cut and engraved plates with clean, accurate lettering that follow the legal standards.</p><a class="q" href="#contact" data-svc="Number Plates">Get a price</a></div></article>
+      <article class="card"><div class="ph"><img src="/service_1.jpg" alt="Radium stickers on bike wheel rims" loading="lazy" decoding="async"></div><div class="b"><h3>Wheel rims</h3><p>Radium stickers on your rims light up in headlights, so other drivers spot your bike from far away at night. Safer rides and a sharper look.</p><a class="q" href="#contact" data-svc="Wheel Rims">Get a price</a></div></article>
+      <article class="card"><div class="ph"><img src="/service_2.jpg" alt="Custom body graphics on a car" loading="lazy" decoding="async"></div><div class="b"><h3>Body graphics</h3><p>Stripes, logos or a fully custom design for your car’s body panels. Tell us the look you want and we’ll fit it neatly.</p><a class="q" href="#contact" data-svc="Body Graphics">Get a price</a></div></article>
+      <article class="card"><div class="ph"><img src="/service_3.jpg" alt="Radium name sticker on a car" loading="lazy" decoding="async"></div><div class="b"><h3>Name stickers</h3><p>Put your name, your family name or your business name on the front or back of your car in bold radium letters.</p><a class="q" href="#contact" data-svc="Name Stickers">Get a price</a></div></article>
+      <article class="card"><div class="ph"><img src="/service_4.jpg" alt="Laser-cut vehicle number plate" loading="lazy" decoding="async"></div><div class="b"><h3>Number plates</h3><p>Laser-cut and engraved plates with clean, accurate lettering that follow the legal standards.</p><a class="q" href="#contact" data-svc="Number Plates">Get a price</a></div></article>
       <article class="card"><div class="ph none" role="img" aria-label="Window tinting">Window tinting</div><div class="b"><h3>Window tinting</h3><p>Quality window films for privacy, UV protection and a cleaner look.</p><a class="q" href="#contact" data-svc="Window Tinting">Get a price</a></div></article>
-      <article class="card"><div class="ph"><img src="/service_5.jpg" alt="Laser engraved keychains and plaques" loading="lazy"></div><div class="b"><h3>Laser engraving</h3><p>Keychains, memorial plaques and personal gifts engraved with a name, a date or a short message.</p><a class="q" href="#contact" data-svc="Engraving">Get a price</a></div></article>
+      <article class="card"><div class="ph"><img src="/service_5.jpg" alt="Laser engraved keychains and plaques" loading="lazy" decoding="async"></div><div class="b"><h3>Laser engraving</h3><p>Keychains, memorial plaques and personal gifts engraved with a name, a date or a short message.</p><a class="q" href="#contact" data-svc="Engraving">Get a price</a></div></article>
     </div>
   </div>
 </section>
 
 <div class="tape" aria-hidden="true"></div>
 
-<section class="steps" id="how">
+<section class="steps" id="how" aria-label="How it works">
   <div class="wrap">
     <h2>Simple from start to finish</h2>
     <div class="sgrid">
@@ -244,7 +253,7 @@ footer img{width:44px;height:44px}
         <li>Mobile advertising for your business</li>
       </ul>
     </div>
-    <img class="w" src="/img_2.jpg" alt="Inside the Sri Harsha Stickering workshop" loading="lazy">
+    <img class="w" src="/img_2.jpg" alt="Inside the Sri Harsha Stickering workshop" loading="lazy" decoding="async">
   </div>
 </section>
 
@@ -260,11 +269,11 @@ footer img{width:44px;height:44px}
         <p><b>Email</b><a href="mailto:Harshapulavarthi06@gmail.com">Harshapulavarthi06@gmail.com</a></p>
         <p><b>Opening hours</b>Monday to Saturday, 9:00 AM to 10:00 PM</p>
       </div>
-      <form class="q" name="contact" method="POST" data-netlify="true" netlify-honeypot="bot">
+      <form class="q" name="contact" method="POST" action="/thanks.html" data-netlify="true" netlify-honeypot="bot">
         <input type="hidden" name="form-name" value="contact">
         <p class="hp"><label>Leave empty <input name="bot"></label></p>
-        <label>Your name <input name="name" required autocomplete="name"></label>
-        <label>Phone number <input name="phone" type="tel" required autocomplete="tel"></label>
+        <label>Your name <input name="name" required autocomplete="name" minlength="2"></label>
+        <label>Phone number <input name="phone" type="tel" required autocomplete="tel" inputmode="tel" pattern="[0-9+ ]{10,15}" title="Enter a 10-digit mobile number"></label>
         <label>Email (optional) <input name="email" type="email" autocomplete="email"></label>
         <label>What do you need?
           <select name="service" id="svc">
@@ -282,24 +291,29 @@ footer img{width:44px;height:44px}
 
 <div class="tape" aria-hidden="true"></div>
 <footer><div class="wrap">
-  <div class="fb"><img src="/logo.svg" alt="" width="44" height="44">Sri Harsha Stickering</div>
+  <div class="fb"><img src="/logo.svg?v=2" alt="" width="44" height="44">Sri Harsha Stickering</div>
   <span>© 2026 Sri Harsha Stickering. All rights reserved.</span>
 </div></footer>
 
 <div class="dock"><a class="c" href="tel:+919440591807">Call</a><a class="w" href="https://wa.me/919440591807" target="_blank" rel="noopener">WhatsApp</a></div>
 
-<dialog id="lb"><form method="dialog"><button>Close</button></form><img id="lbimg" alt=""></dialog>
+<dialog id="lb" aria-label="Photo viewer"><div class="lbt"><button type="button" id="prev" aria-label="Previous photo">&larr;</button><button type="button" id="next" aria-label="Next photo">&rarr;</button><button type="button" id="cls">Close</button></div><img id="lbimg" alt=""></dialog>
 
 <script>
-var files=["gallery_1","gallery_2","gallery_3","gallery_9","gallery_6","gallery_5","gallery_7","gallery_4"];
+var files=["gallery_1","gallery_2","gallery_3","gallery_9","gallery_6","gallery_5","gallery_7","gallery_4"],cur=0;
 var gal=document.getElementById("gal"),lb=document.getElementById("lb"),lbimg=document.getElementById("lbimg");
+function show(i){cur=(i+files.length)%files.length;lbimg.src="/"+files[cur]+".jpg";lbimg.alt="Vehicle stickering work, photo "+(cur+1)+" of "+files.length}
 files.forEach(function(f,i){
   var b=document.createElement("button");b.type="button";b.setAttribute("aria-label","Open photo "+(i+1));
-  b.innerHTML='<img loading="lazy" src="/'+f+'.jpg" alt="Vehicle stickering work, photo '+(i+1)+'">';
-  b.onclick=function(){lbimg.src="/"+f+".jpg";lbimg.alt="Vehicle stickering work, photo "+(i+1);lb.showModal()};
+  b.innerHTML='<img loading="lazy" decoding="async" src="/'+f+'.jpg" alt="Vehicle stickering work, photo '+(i+1)+'">';
+  b.onclick=function(){show(i);lb.showModal()};
   gal.appendChild(b);
 });
+document.getElementById("prev").onclick=function(){show(cur-1)};
+document.getElementById("next").onclick=function(){show(cur+1)};
+document.getElementById("cls").onclick=function(){lb.close()};
 lb.addEventListener("click",function(e){if(e.target===lb)lb.close()});
+lb.addEventListener("keydown",function(e){if(e.key==="ArrowLeft")show(cur-1);if(e.key==="ArrowRight")show(cur+1)});
 
 document.querySelectorAll("[data-svc]").forEach(function(a){
   a.addEventListener("click",function(){document.getElementById("svc").value=a.dataset.svc});
